@@ -85,7 +85,7 @@ func main() {
 	//Instantiate the client
 	client := loggly.New(tag)
 
-	ticker := time.NewTicker(time.Minute * 3)
+	ticker := time.NewTicker(time.Hour * 3)
 
 	for ; true; <-ticker.C {
 
